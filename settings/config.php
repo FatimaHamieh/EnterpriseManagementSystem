@@ -2,63 +2,61 @@
 
 	/* database credientails */
 		$host = 'localhost'; /* mysql server name default is localhost */
-		$databaseName = ''; /* Database to be used */
-		$databaseUser = ''; /* Database username */
+		$databaseName = 'ems'; /* Database to be used */
+		$databaseUser = 'root'; /* Database username */
 		$databasePassword = ''; /* Database  password */
 	/* end */
 
 	// Path of target folder  where you will install EMS. (say) if your site is http://www.example.com
 	// and you install EMS inside a folder called "ems". Than $absoluteUrl will be http://www.example.com/ems 
 
-	$absoluteUrl = 'http://www.tomatoinc.com/ems/';
-
+	//$absoluteUrl = 'http://www.tomatoinc.com/ems/';
+	$absoluteUrl = 'http://localhost/EMS/'
+	
 	// EMS email address for all out going emails
-
-	$fromEMS = 'admin@tomatoinc.com';
+	//$fromEMS = 'fhamieh99@gmail.com';
 
 	// working hours a day for the employees default is 8, you can change it according to your company
 
-	$WorkingHoursPerDay = 8;
+	// $WorkingHoursPerDay = 8;
 
-	// Email sent to Employee for payslip boolean value, default is true
+	// // Email sent to Employee for payslip boolean value, default is true
 
-	$sendEmailToEmployee = true;
+	// $sendEmailToEmployee = false;
 
-	//Subject of email, sent to employee for salary credit form EMS system
+	// //Subject of email, sent to employee for salary credit form EMS system
 
-	$payslipSubject = "Salary Credited";
+	// $payslipSubject = "Salary Credited";
 
-	// list of currencies used in EMS
+	// // list of currencies used in EMS
 
-	$currencies = array("rupee"=>"&#8377;", "dollar"=>"&#36;", "pound"=>"&#163;", "euro"=>"&#8364;");
+	// $currencies = array("rupee"=>"&#8377;", "dollar"=>"&#36;", "pound"=>"&#163;", "euro"=>"&#8364;");
 
-	//invoice type selectbox options
+	// //invoice type selectbox options
 	
-	$invoiceTypes = array("National Invoice", "Export Invoice");
+	// $invoiceTypes = array("National Invoice", "Export Invoice");
 
 
-	//Subject of email, sent to client for Invoice details form EMS system
+	// //Subject of email, sent to client for Invoice details form EMS system
 
-	$invoiceSubject = "Invoice Details";
+	// $invoiceSubject = "Invoice Details";
 
-	//subject of email sent from EMS for change Password 
+	// //subject of email sent from EMS for change Password 
 
-	$resetPasswordSubject = 'Reset Password Request';
+	// $resetPasswordSubject = 'Reset Password Request';
 
-	// List of designation in the company for employee
+	// // List of designation in the company for employee
 
-	$arrayDesignations = array('Junior Programmer', 'Associate Programme', 'Senior Programmer', 'Team Leader', 'Project Manager');
+	// $arrayDesignations = array('Junior Programmer', 'Associate Programme', 'Senior Programmer', 'Team Leader', 'Project Manager');
 
-	//  footer format text with tags
+	// //  footer format text with tags
 
-	$footerMessage = '<strong>Copyright &copy; 2017-2018.</strong> All rights reserved.';
+	// // Salary pay currency type
 
-	// Salary pay currency type
+	// $salaryPayCurrency = '&#8377;';
 
-	$salaryPayCurrency = '&#8377;';
+	// // Set dashboard logo size
 
-	// Set dashboard logo size
-
-	$dasboardLogoSize = 'width:70%;';
+	// $dasboardLogoSize = 'width:70%;';
 
 ?>

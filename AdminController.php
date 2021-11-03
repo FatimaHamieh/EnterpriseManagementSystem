@@ -10,7 +10,8 @@ if (isset($_POST["loginForm"])) {
     $adminLoginForm = new AdminManager();
     $username = mysqli_real_escape_string($DBManager->conn, $_POST['username']);
     $password = mysqli_real_escape_string($DBManager->conn, $_POST['password']);
-    $encryptpassword = md5($password);
+    //$encryptpassword = md5($password);
+    $encryptpassword = $password;
     if($username == 'admin') {
         $loaderManager = new LoaderManager();
         $checkSettingComplete = $loaderManager->checkSettingComplete();

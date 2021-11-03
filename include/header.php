@@ -71,7 +71,7 @@ else {
       <span class="logo-mini"><b>A</b>LB</span>
       <!-- logo for regular state and mobile devices -->
       <?php if($companyInfo['company_logo'] != '') { ?>
-      <img style="<?php echo $dasboardLogoSize;?>" src="<?php echo 'uploads/company_profile_images/'.$companyInfo['company_logo'];?>" alt="company-logo">
+      <img style="width:70%" src="<?php echo 'uploads/company_profile_images/'.$companyInfo['company_logo'];?>" alt="company-logo">
       <?php } elseif ($companyInfo['company_name'] != '') { ?> 
       <span class="logo-lg"><b><?php echo $companyInfo['company_name'];?></b></span>
       <?php } else { ?>
@@ -138,48 +138,7 @@ else {
           <ul class="treeview-menu">
             <li class="<?php if($current_link == $absoluteUrl.'createEmployee') echo 'active'; ?>"><a href="createEmployee"><i class="fa fa-circle"></i>Create Employee</a></li>
             <li class="<?php if($current_link == $absoluteUrl.'viewEmployees') echo 'active'; ?>"><a href="viewEmployees"><i class="fa fa-circle"></i>View Employees</a></li>
-             <li class="<?php if($current_link == $absoluteUrl.'probationerAppointment') echo 'active'; ?>"><a href="probationerAppointment"><div class="menu-round-icon"><i class="fa fa-circle"></i><br><i class="fa fa-circle" style="opacity:0;"></i></div><div class="modified-submenu">Probationer <br>Appointment Letter</div></a></li>
-
-             <li class="<?php if($current_link == $absoluteUrl.'permanentAppointment') echo 'active'; ?>"><a href="permanentAppointment"><div class="menu-round-icon"><i class="fa fa-circle"></i><br><i class="fa fa-circle" style="opacity:0;"></i></div><div class="modified-submenu">Permanent <br>Appointment Letter</div></a></li>
-             <li class="<?php if($current_link == $absoluteUrl.'experienceCertificate') echo 'active'; ?>"><a href="experienceCertificate"><i class="fa fa-circle"></i>Experience Certificate</a></li>
-            
-
             <li  class="<?php if($current_link == $absoluteUrl.'employeeTermsConditions') echo 'active'; ?>"><a href="employeeTermsConditions"><div class="menu-round-icon"><i class="fa fa-circle"></i><br><i class="fa fa-circle" style="opacity:0;"></i></div><div class="modified-submenu">Employee <br>Terms &amp; Conditions</div></a></li>
-
-            <li  class="<?php if($current_link == $absoluteUrl.'payroll') echo 'active'; ?>"><a href="payroll"><i class="fa fa-circle"></i>Payroll</a></li>
-            <li  class="<?php if($current_link == $absoluteUrl.'searchPayroll') echo 'active'; ?>"><a href="searchPayroll"><i class="fa fa-circle"></i>Search Payroll</a></li>
-          </ul>
-        </li>
-        <li class="treeview <?php if($current_link == $absoluteUrl.'createClient' || $current_link == $absoluteUrl.'viewClients' || $current_link == $absoluteUrl.'viewClientProjects' || $current_link == $absoluteUrl.'viewClientDetails' || $current_link == $absoluteUrl.'editClient' || $current_link == $absoluteUrl.'viewProjects' || $current_link == $absoluteUrl.'viewSingleProjectDetails' ) echo 'active'; ?>">
-          <a href="#">
-            <i class="fa fa-users" aria-hidden="true"></i>
-            <span>Clients</span>
-          </a>
-          <ul class="treeview-menu">
-            <li class="<?php if($current_link == $absoluteUrl.'createClient') echo 'active'; ?>"><a href="createClient"><i class="fa fa-circle"></i>Create Client</a></li>
-            <li class="<?php if($current_link == $absoluteUrl.'viewClients' || $current_link == $absoluteUrl.'viewClientProjects' || $current_link == $absoluteUrl.'viewClientDetails' || $current_link == $absoluteUrl.'editClient') echo 'active'; ?>"><a href="viewClients"><i class="fa fa-circle"></i>View Clients</a></li>
-            <li class="<?php if($current_link == $absoluteUrl.'viewProjects' || $current_link == $absoluteUrl.'viewSingleProjectDetails') echo 'active'; ?>"><a href="viewProjects"><i class="fa fa-circle"></i>View Projects</a></li>
-          </ul>
-        </li>
-        <li class="treeview <?php if($current_link == $absoluteUrl.'createInvoice' || $current_link == $absoluteUrl.'viewInvoices' || $current_link == $absoluteUrl.'receiveInvoice' || $current_link == $absoluteUrl.'editCreatedInvoice') echo 'active'; ?>">
-          <a href="#">
-            <i class="fa fa-file-text" aria-hidden="true"></i>
-            <span>Invoice</span>
-          </a>
-          <ul class="treeview-menu">
-            <li class="<?php if($current_link == $absoluteUrl.'createInvoice') echo 'active'; ?>"><a href="createInvoice"><i class="fa fa-circle"></i>Create Invoice</a></li>
-            <li class="<?php if($current_link == $absoluteUrl.'receiveInvoice') echo 'active'; ?>"><a href="receiveInvoice"><i class="fa fa-circle"></i>Receive Invoice</a></li>
-            <li class="<?php if($current_link == $absoluteUrl.'viewInvoices') echo 'active'; ?>"><a href="viewInvoices"><i class="fa fa-circle"></i>View Invoices</a></li>
-          </ul>  
-        </li>
-        <li class="treeview <?php if($current_link == $absoluteUrl.'currentGST' || $current_link == $absoluteUrl.'searchGST' || $current_link == $absoluteUrl.'viewGST') echo 'active'; ?>">
-          <a href="#">
-            <i class="fa fa-files-o"></i>
-            <span>GST</span>
-          </a>  
-          <ul class="treeview-menu">
-              <li class="<?php if($current_link == $absoluteUrl.'currentGST') echo 'active'; ?>"><a href="currentGST"><i class="fa fa-circle"></i>Current GST</a></li>
-              <li class="<?php if($current_link == $absoluteUrl.'searchGST') echo 'active'; ?>"><a href="searchGST"><i class="fa fa-circle"></i>Search GST</a></li>
           </ul>
         </li>
         <li class="treeview <?php if($current_link == $absoluteUrl.'companyProfile' || $current_link == $absoluteUrl.'changePasswordForm' || $current_link == $absoluteUrl.'employeeLeaveHoliday' || $current_link == $absoluteUrl.'employeeLeaveHoliday' || $current_link == $absoluteUrl.'notifications' ) echo 'active'; ?>">

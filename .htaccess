@@ -1,0 +1,57 @@
+Options +Multiviews
+RewriteEngine On
+RewriteBase /
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^index$ http://localhost/EMS/index.php$1 [L]
+RewriteRule ^logout$ http://localhost/EMS/logout.php$1 [L]
+RewriteRule ^help$ help.php$1 [L]
+RewriteRule ^adminHome$ http://localhost/EMS/adminHome.php$1 [L]
+RewriteRule ^forgotPassword$ http://localhost/EMS/forgotPassword.php$1 [L]
+RewriteRule ^resetPassword/([A-Z0-9]+)$ http://localhost/EMS/resetPassword.php?token=$1 [L]
+## Employee
+RewriteRule ^createEmployee$ http://localhost/EMS/createEmployee.php$1 [L]
+RewriteRule ^viewEmployees$ http://localhost/EMS/viewEmployees.php$1 [L]
+##RewriteRule ^viewEmployeeDetails/(.*)$ http://localhost/EMS/viewEmployeeDetails.php?employee_id=$1 [L]
+##RewriteRule ^editEmployee/(.*)$ http://localhost/EMS/editEmployee.php?employee_id=$1 [L]
+RewriteRule ^probationerAppointment$ http://localhost/EMS/probationerAppointment.php$1 [L]
+RewriteRule ^permanentAppointment$ http://localhost/EMS/permanentAppointment.php$1 [L]
+RewriteRule ^experienceCertificate$ http://localhost/EMS/experienceCertificate.php$1 [L]
+RewriteRule ^employeeTermsConditions$ http://localhost/EMS/employeeTermsConditions.php$1 [L]
+RewriteRule ^payroll$ http://localhost/EMS/payroll.php$1 [L]
+RewriteRule ^searchPayroll$ http://localhost/EMS/searchPayroll.php$1 [L]
+
+## Client
+RewriteRule ^createClient$ http://localhost/EMS/createClient.php$1 [L]
+RewriteRule ^viewClients$ http://localhost/EMS/viewClients.php$1 [L]
+RewriteRule ^viewProjects$ http://localhost/EMS/viewProjects.php$1 [L]
+##RewriteRule ^viewClientDetails/(.*)$ http://localhost/EMS/viewClientDetails.php?client_id=$1 [L]
+##RewriteRule ^editClient/(.*)$ http://localhost/EMS/editClient.php?client_id=$1 [L]
+##RewriteRule ^viewSingleProjectDetails/(.*)$ http://localhost/EMS/viewSingleProjectDetails.php?project_id=$1 [L]
+
+## Invoice
+RewriteRule ^createInvoice$ http://localhost/EMS/createInvoice.php$1 [L]
+RewriteRule ^receiveInvoice$ http://localhost/EMS/receiveInvoice.php$1 [L]
+RewriteRule ^viewInvoices$ http://localhost/EMS/viewInvoices.php$1 [L]
+ 
+## GST
+RewriteRule ^currentGST$ http://localhost/EMS/currentGST.php$1 [L]
+RewriteRule ^searchGST$ http://localhost/EMS/searchGST.php$1 [L]
+##RewriteRule ^viewGST/(.*)$ http://localhost/EMS/viewGST.php?period=$1 [L]
+
+## Settings
+RewriteRule ^companyProfile$ http://localhost/EMS/companyProfile.php$1 [L]
+RewriteRule ^changePasswordForm$ http://localhost/EMS/changePasswordForm.php$1 [L]
+RewriteRule ^employeeLeaveHoliday$ http://localhost/EMS/employeeLeaveHoliday.php$1 [L]
+RewriteRule ^notifications$ http://localhost/EMS/notifications.php$1 [L]
+
+## Employee Part
+RewriteRule ^home$ http://localhost/EMS/employee/home.php$1 [L]
+RewriteRule ^probationerAppointment$ http://localhost/EMS/employee/probationerAppointment.php$1 [L]
+RewriteRule ^permanentAppointment$ http://localhost/EMS/employee/permanentAppointment.php$1 [L]
+RewriteRule ^experienceCertificate$ http://localhost/EMS/employee/experienceCertificate.php$1 [L]
+RewriteRule ^employeeTermsConditions$ http://localhost/EMS/employee/employeeTermsConditions.php$1 [L]
+RewriteRule ^payroll$ http://localhost/EMS/employee/payroll.php$1 [L]
+
+## 404 error page
+ErrorDocument 404 http://localhost/EMS/404Error.php

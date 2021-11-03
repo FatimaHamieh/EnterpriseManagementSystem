@@ -1,5 +1,4 @@
 <footer class="main-footer">
-	<?php echo $footerMessage;?>
 </footer>
 </div>
 <!-- /wrapper -->

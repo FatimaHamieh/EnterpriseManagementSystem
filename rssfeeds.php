@@ -1,4 +1,7 @@
 <?php
+$feed1="";
+$feed2="";
+$feed3="";
 $rss = simplexml_load_file('https://economictimes.indiatimes.com/news/politics-and-nation/rssfeeds/1052732854.cms');
 $feed1 = '<h3>'. $rss->channel->title . '</h3>';
 foreach ($rss->channel->item as $item) {
